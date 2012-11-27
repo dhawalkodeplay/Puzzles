@@ -9,7 +9,7 @@ function index() {
         $temp = $i;
         for($j = $i + 1; $j < 101; $j++) {
             $temp = $temp + $j;
-            if($temp > 100) continue;
+            if($temp > 100) break;
             $temp_key = $temp_key.'+'.$j;
             $all_combinations[$temp_key] = $temp;
         }
